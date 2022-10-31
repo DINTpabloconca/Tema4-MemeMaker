@@ -1,0 +1,16 @@
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\bin\Debug\MemeMaker.exe.config
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\bin\Debug\MemeMaker.exe
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\bin\Debug\MemeMaker.pdb
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\obj\Debug\MemeMaker.csproj.AssemblyReference.cache
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\obj\Debug\MainWindow.g.cs
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\obj\Debug\App.g.cs
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\obj\Debug\MemeMaker_MarkupCompile.cache
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\obj\Debug\MemeMaker_MarkupCompile.lref
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\obj\Debug\MainWindow.baml
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\obj\Debug\MemeMaker.g.resources
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\obj\Debug\MemeMaker.Properties.Resources.resources
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\obj\Debug\MemeMaker.csproj.GenerateResource.cache
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\obj\Debug\MemeMaker.csproj.CoreCompileInputs.cache
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\obj\Debug\MemeMaker.exe
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\obj\Debug\MemeMaker.pdb
+C:\Users\Pablo\Source\Repos\Tema4-MemeMaker\MemeMaker\obj\Debug\GeneratedInternalTypeHelper.g.cs

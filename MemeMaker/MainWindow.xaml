@@ -12,53 +12,34 @@
         MinWidth="730"
         Icon="smile.ico">
     <Window.Resources>
-        <Style TargetType="TextBlock"
-               x:Key="etiquetaCampo">
-            <Setter Property="Margin"
-                    Value="0,10,0,0"></Setter>
+        <local:Converter x:Key="Borde"/>
+        <Style TargetType="TextBlock" x:Key="etiquetaCampo">
+            <Setter Property="Margin" Value="0,10,0,0"></Setter>
         </Style>
-
-        <Style TargetType="TextBox">
-            <Setter Property="Margin"
-                    Value="0,10,20,0"></Setter>
-        </Style>
-        
-        <Style TargetType="TextBlock"
-               x:Key="textoMeme">
-            <Setter Property="Foreground"
-                    Value="White"></Setter>
-            <Setter Property="FontFamily"
-                    Value="Impact"></Setter>
-            <Setter Property="FontSize"
-                    Value="36"></Setter>
-            <Setter Property="HorizontalAlignment"
-                    Value="Center"></Setter>
-            <Setter Property="TextWrapping"
-                    Value="Wrap"></Setter>
-            <Setter Property="TextAlignment"
-                    Value="Center"></Setter>
-            <Setter Property="Margin"
-                    Value="0,-5,0,0"></Setter>
+        <Style TargetType="TextBlock" x:Key="textoMeme">
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="Margin" Value="0,-5,0,0"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="FontFamily" Value="Impact"></Setter>
+            <Setter Property="FontSize" Value="36"></Setter>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+            <Setter Property="TextWrapping" Value="Wrap"></Setter>
             <Setter Property="Effect">
                 <Setter.Value>
                     <DropShadowEffect />
                 </Setter.Value>
             </Setter>
         </Style>
-        
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="0,10,20,0"></Setter>
+        </Style>
         <Style TargetType="Slider">
-            <Setter Property="Minimum"
-                    Value="100"></Setter>
-            <Setter Property="Maximum"
-                    Value="1000"></Setter>
-            <Setter Property="Value"
-                    Value="500"></Setter>
-            <Setter Property="Width"
-                    Value="600"></Setter>
-            <Setter Property="Margin"
-                    Value="0,10,0,0"></Setter>
-            <Setter Property="HorizontalAlignment"
-                    Value="Left"></Setter>
+            <Setter Property="Minimum" Value="100"></Setter>
+            <Setter Property="Maximum" Value="1000"></Setter>
+            <Setter Property="Value" Value="500"></Setter>
+            <Setter Property="Width" Value="600"></Setter>
+            <Setter Property="Margin" Value="0,10,0,0"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
         </Style>
     </Window.Resources>
 
@@ -67,17 +48,17 @@
         <StackPanel>
             <Grid Margin="5,10,5,0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="80" />
-                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="80"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
 
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition />
-                    <RowDefinition />
-                    <RowDefinition />
-                    <RowDefinition />
-                    <RowDefinition />
-                    <RowDefinition />
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
 
                 <TextBlock Grid.Row="0"
@@ -119,14 +100,17 @@
                           Margin="0,10,0,0"
                           IsChecked="True"></CheckBox>
             </Grid>
-            <Border Background="#FFF3D2D2"
+            <Button Margin="5" Width="100" Height="20" HorizontalAlignment="Left" Content="Descargar meme"></Button>
+            <Border Width="{Binding ElementName=anchoSlider,Path=Value}" Height="{Binding ElementName=altoSlider,Path=Value}"
+                    BorderThickness="{Binding ElementName=bordeCheckBox,Path=IsChecked,Converter={StaticResource Borde}}"
+                    Background="#FFF3D2D2"
                     BorderBrush="Black"
                     Margin="10">
                 <Grid>
-                    <Image Stretch="Fill" />
-                    <TextBlock Style="{StaticResource textoMeme}"
+                    <Image Source="{Binding ElementName=imagenTextBox,Path=Text}" Stretch="Fill"/>
+                    <TextBlock Text="{Binding ElementName=superiorTextBox,Path=Text}" Style="{StaticResource textoMeme}"
                                VerticalAlignment="Top"></TextBlock>
-                    <TextBlock Style="{StaticResource textoMeme}"
+                    <TextBlock Text="{Binding ElementName=inferiorTextBox,Path=Text}" Style="{StaticResource textoMeme}"
                                VerticalAlignment="Bottom"></TextBlock>
                 </Grid>
             </Border>
